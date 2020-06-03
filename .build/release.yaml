@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "WorkoutTimerAPI-release.module": ["<WorkoutTimerAPI-release.module>"]
+  "WorkoutTimerAPITests-release.module": ["<WorkoutTimerAPITests-release.module>"]
+  "main": ["<WorkoutTimerAPI-release.module>"]
+  "test": ["<WorkoutTimerAPI-release.module>","<WorkoutTimerAPITests-release.module>","<workout-timer-apiPackageTests-release.test>"]
+  "workout-timer-apiPackageTests-release.test": ["<workout-timer-apiPackageTests-release.test>"]
+default: "main"
+nodes:
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/":
+    is-directory-structure: true
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Tests/WorkoutTimerAPITests/":
+    is-directory-structure: true
+commands:
+  "<WorkoutTimerAPI-release.module>":
+    tool: phony
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.swiftmodule"]
+    outputs: ["<WorkoutTimerAPI-release.module>"]
+
+  "<WorkoutTimerAPITests-release.module>":
+    tool: phony
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.build/XCTestManifests.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.swiftmodule"]
+    outputs: ["<WorkoutTimerAPITests-release.module>"]
+
+  "<workout-timer-apiPackageTests-release.test>":
+    tool: phony
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/workout-timer-apiPackageTests.xctest/Contents/MacOS/workout-timer-apiPackageTests"]
+    outputs: ["<workout-timer-apiPackageTests-release.test>"]
+
+  "C.WorkoutTimerAPI-release.module":
+    tool: swift-compiler
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/CategoryListDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseGetDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseSetListDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutGetDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutListDto.swift"]
+    outputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "WorkoutTimerAPI"
+    module-output-path: "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.swiftmodule"
+    import-paths: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release"]
+    temps-path: "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build"
+    objects: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-O","-g","-j12","-DSWIFT_PACKAGE","-module-cache-path","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/WorkoutTimerAPI-Swift.h","-color-diagnostics"]
+    sources: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/CategoryListDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseGetDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseSetListDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutGetDto.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutListDto.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: 12
+
+  "C.WorkoutTimerAPITests-release.module":
+    tool: swift-compiler
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Tests/WorkoutTimerAPITests/XCTestManifests.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.swiftmodule"]
+    outputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.build/XCTestManifests.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "WorkoutTimerAPITests"
+    module-output-path: "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.swiftmodule"
+    import-paths: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release"]
+    temps-path: "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.build"
+    objects: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-O","-g","-j12","-DSWIFT_PACKAGE","-module-cache-path","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Tests/WorkoutTimerAPITests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: 12
+
+  "C.workout-timer-apiPackageTests-release.test":
+    tool: shell
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto.swift.o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPITests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/workout-timer-apiPackageTests.xctest/Contents/MacOS/workout-timer-apiPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/release/workout-timer-apiPackageTests.xctest/Contents/MacOS/workout-timer-apiPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-L","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release","-o","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/workout-timer-apiPackageTests.xctest/Contents/MacOS/workout-timer-apiPackageTests","-module-name","workout_timer_apiPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/workout-timer-apiPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.15","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Tests/WorkoutTimerAPITests/","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Package.swift","/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

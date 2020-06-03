@@ -1,0 +1,32 @@
+{
+  "": {
+    "dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/WorkoutTimerAPI.d",
+    "object": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/WorkoutTimerAPI.o",
+    "swift-dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/master.swiftdeps"
+  },
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/CategoryListDto.swift": {
+    "object": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto.swift.o",
+    "swiftmodule": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto~partial.swiftmodule",
+    "swift-dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/CategoryListDto.swiftdeps"
+  },
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseGetDto.swift": {
+    "object": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto.swift.o",
+    "swiftmodule": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto~partial.swiftmodule",
+    "swift-dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseGetDto.swiftdeps"
+  },
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseSetListDto.swift": {
+    "object": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto.swift.o",
+    "swiftmodule": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto~partial.swiftmodule",
+    "swift-dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/ExerciseSetListDto.swiftdeps"
+  },
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutGetDto.swift": {
+    "object": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto.swift.o",
+    "swiftmodule": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto~partial.swiftmodule",
+    "swift-dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutGetDto.swiftdeps"
+  },
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutListDto.swift": {
+    "object": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto.swift.o",
+    "swiftmodule": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto~partial.swiftmodule",
+    "swift-dependencies": "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/Models/WorkoutListDto.swiftdeps"
+  }
+}

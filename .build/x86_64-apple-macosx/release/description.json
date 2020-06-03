@@ -1,0 +1,25 @@
+{
+  "allExecutables" : [
+
+  ],
+  "builtTestProducts" : [
+    {
+      "packageName" : "workout-timer-api",
+      "productName" : "workout-timer-apiPackageTests",
+      "testBinary" : "\/Users\/itsonev\/Developer\/Vapor\/workout-timer-backend\/API\/.build\/x86_64-apple-macosx\/release\/workout-timer-apiPackageTests.xctest\/Contents\/MacOS\/workout-timer-apiPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "rootExecutables" : [
+
+  ],
+  "swiftTargetMap" : {
+    "C.WorkoutTimerAPI-release.module" : "WorkoutTimerAPI",
+    "C.WorkoutTimerAPITests-release.module" : "WorkoutTimerAPITests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

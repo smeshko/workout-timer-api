@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "a2d367b4e373a9a0a0e298846518cc7e"
+build_time: [1591216192, 968156000]
+inputs:
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/CategoryListDto.swift": [9223372036, 854775807]
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseGetDto.swift": [9223372036, 854775807]
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/ExerciseSetListDto.swift": [9223372036, 854775807]
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutGetDto.swift": [9223372036, 854775807]
+  "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/Sources/WorkoutTimerAPI/Models/WorkoutListDto.swift": [9223372036, 854775807]

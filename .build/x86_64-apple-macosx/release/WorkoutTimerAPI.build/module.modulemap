@@ -1,0 +1,4 @@
+module WorkoutTimerAPI {
+    header "/Users/itsonev/Developer/Vapor/workout-timer-backend/API/.build/x86_64-apple-macosx/release/WorkoutTimerAPI.build/WorkoutTimerAPI-Swift.h"
+    requires objc
+}
