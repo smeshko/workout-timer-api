@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "WorkoutTimerAPI",
+    name: "workout-timer-api",
     platforms: [
         .macOS(.v10_15),
         .iOS(.v13),
