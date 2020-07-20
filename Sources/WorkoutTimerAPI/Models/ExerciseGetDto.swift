@@ -7,9 +7,9 @@ public struct ExerciseGetDto: Codable {
     public var thumbnailKey: String
     public var muscles: [String]
     public var steps: [String]
-    public var level: String
+    public var level: Int
     
-    public init(id: String, name: String, imageKey: String, thumbnailKey: String, steps: [String], muscles: [String], level: String) {
+    public init(id: String, name: String, imageKey: String, thumbnailKey: String, steps: [String], muscles: [String], level: Int) {
         self.id = id
         self.name = name
         self.imageKey = imageKey
