@@ -17,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>WorkoutTimerAPI</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>WorkoutTimerAPITests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>workout-timer-backend</key>
 		<dict>
 			<key>primary</key>
