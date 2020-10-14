@@ -9,8 +9,19 @@ public struct WorkoutGetDto: Codable {
     public var exerciseSets: [ExerciseSetListDto]
     public var level: Int
     public var muscles: [String]
+    public var createdAt: Date?
+    public var updatedAt: Date?
     
-    public init(id: String, name: String, imageKey: String, thumbnailKey: String, exerciseSets: [ExerciseSetListDto], level: Int, muscles: [String]) {
+    public init(id: String,
+                name: String,
+                imageKey: String,
+                thumbnailKey: String,
+                exerciseSets: [ExerciseSetListDto],
+                level: Int,
+                muscles: [String],
+                createdAt: Date?,
+                updatedAt: Date?
+    ) {
         self.id = id
         self.name = name
         self.imageKey = imageKey
@@ -18,5 +29,7 @@ public struct WorkoutGetDto: Codable {
         self.exerciseSets = exerciseSets
         self.level = level
         self.muscles = muscles
+        self.createdAt = createdAt
+        self.updatedAt = updatedAt
     }
 }
